@@ -1,0 +1,7 @@
+[2018-09-06 15:50:17.039] [renderer1] [info] no standard startup: not the explorer viewlet
+[2018-09-06 15:50:26.844] [renderer1] [info] no standard startup: not just one text editor
+[2018-09-06 15:50:29.162] [renderer1] [info] No grammar found for scope text.html.javadoc
+[2018-09-06 15:58:31.896] [renderer1] [error] Invalid start index: 4: Error: Invalid start index: 4
+    at e.splice (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:836:164)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:2092:932
+    at <anonymous>
