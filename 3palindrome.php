@@ -1,8 +1,34 @@
 <?php
 include'util.php';
-include'2primeno.php';
-for($i=0;$i<lenght.$ar;$i++)
+
+echo"\n prime palindrome form 0 to 1000";
+echo"\n";
+for($i=2;$i<=1000;$i++)
 {
-echo $ar[$i];
+    if(prime($i))
+    {
+    if(palindrome($i))
+    {
+        echo $i . " ";
+    }
+}
+    
+}
+
+echo"\n prime anagram from 0 to 1000";
+echo"\n";
+
+for($i=2;$i<=999;$i++)
+{
+    for($j=$i+1;$j<=1000;$j++)
+    {
+    if(prime($i) && prime($j))
+    {
+        if(anagram($i,$j))
+        {
+            echo "[" . $i . " and " . $j . "]  ";
+        }
+    }
+}
 }
 ?>

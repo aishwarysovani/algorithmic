@@ -21,6 +21,11 @@
             "label": "Ctrl+Shift+T",
             "isNative": true
         },
+        "workbench.action.openRecent": {
+            "id": "workbench.action.openRecent",
+            "label": "Ctrl+R",
+            "isNative": true
+        },
         "workbench.action.files.save": {
             "id": "workbench.action.files.save",
             "label": "Ctrl+S",
@@ -460,5 +465,25 @@
             "file:///var/www/html/algorithmic"
         ],
         "files": []
+    },
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/var/www/html/algorithmic",
+                "external": "file:///var/www/html/algorithmic",
+                "path": "/var/www/html/algorithmic",
+                "scheme": "file"
+            },
+            "backupPath": "/var/www/html/algorithmic/~/.vscode-root/Backups/59b6cac6e9e9b757fae3ef5c0bfba036",
+            "uiState": {
+                "mode": 0,
+                "x": 65,
+                "y": 24,
+                "width": 1301,
+                "height": 744
+            }
+        }
     }
 }

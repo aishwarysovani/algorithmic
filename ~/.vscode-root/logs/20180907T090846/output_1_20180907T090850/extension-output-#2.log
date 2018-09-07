@@ -1,0 +1,11 @@
+[Info  - 9:08:55 AM] 4 files total
+[Info  - 9:08:55 AM] Indexing project for definitions and static references
+Parsing file:///var/www/html/algorithmic/1anagram.php
+Parsing file:///var/www/html/algorithmic/3palindrome.php
+Parsing file:///var/www/html/algorithmic/2primeno.php
+[Info  - 9:08:55 AM] Indexing project for dynamic references
+Parsing file:///var/www/html/algorithmic/1anagram.php
+Parsing file:///var/www/html/algorithmic/3palindrome.php
+Parsing file:///var/www/html/algorithmic/2primeno.php
+[Info  - 9:08:55 AM] 0 Packages
+[Info  - 9:08:55 AM] All 4 PHP files parsed in 0 seconds. 140 MiB allocated.
