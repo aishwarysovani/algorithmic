@@ -38,15 +38,17 @@ function checknum()
 //function to check string is anagram or not
 function anagram($str1,$str2)
 {
+    $str1=strtolower($str1);
+    $str2=strtolower($str2);
     $stringParts1 = str_split($str1);
-    $s1=sort($stringParts1);
+    sort($stringParts1);
+    $s1=implode($stringParts1);
+
     $stringParts2 = str_split($str2);
-    $s2=sort($stringParts2);
-    $s1=implode('',$stringParts1);
-    $s2=implode('',$stringParts2);
-    $s1=strtolower($s1);
-    $s2=strtolower($s2);
-    if(strcmp($s1,$s2) == 0)
+    sort($stringParts2);
+    $s2=implode($stringParts2);
+    
+    if($s1===$s2)
     {
        return true;
     }
@@ -103,19 +105,20 @@ function search()
 //function for binary sraech
 function binsearch($s,$a,$e)
 {
-    $start=0;$end=$s-1;
+    $start=0;$end=count($a)-1;
     while ($start <= $end) {
-        $mid = ($start + $end) / 2;
+        $mid = floor(($start + $end) / 2);
         if ($a[$mid] == $e) {
-            return $mid;
-        } else if ($a[$mid] < $e) {
+            return true;
+         if ($a[$mid] < $e) {
             $end = $mid - 1;
 
         } else {
             $start = $mid + 1;
         }
     }
-    return -1;
+}
+return false;
 
 }
 
@@ -198,6 +201,7 @@ function bubbsort($s,$a)
             }
         }
     }
+    return $a;
 }
 
 
@@ -206,12 +210,13 @@ function mergesort($a, $l, $m, $r)
 {
         $n1 = $m - $l + 1; 
         $n2 =  $r - $m; 
-        $L=array($n1); $R=array($n2); 
-        for ($i = 0; $i <= $n1; $i++) 
+        $L=array($n1); 
+        $R=array($n2); 
+        for ($i = 0; $i < $n1; $i++) 
         {
             $L[$i] = $a[$l + $i]; 
         }
-        for ($j = 0; $j <= $n2; $j++)
+        for ($j = 0; $j < $n2; $j++)
         { 
             $R[$j] = $a[$m + 1 +$j]; 
         }
@@ -243,36 +248,43 @@ function mergesort($a, $l, $m, $r)
             $j++; 
             $k++; 
         } 
-
-    return $a;
-    
+        return $a;
 }
 
 
 function mergeSort1($a,$l,$r) 
 { 
+    $m=$l+($r-$l)/2;
     if ($l < $r) 
     { 
-        $m = $l+($r-$l)/2; 
-        return mergeSort1($a,$l,$m); 
-        return mergeSort1($a,$m+1,$r); 
+        mergeSort1($a,$l,$m-1); 
+        mergeSort1($a,$m,$r); 
   
         $a=mergesort($a, $l, $m, $r); 
     } 
-   return $a; 
+    return $a;
 } 
 
 
-function findques($s,$n)
+function calnotes($c,$n)
 {
-    if(($n-$s)==0)
-       return $n;
-    $mid = $n + ($n - $s) / 2;
-       echo"Is it less than? " . $mid;
-    if(is_bool)
-       return findques($s, $mid);
-    else                     
-       return findques($mid, $n);
-
+   $i=0;$total=0;
+    if($c==0)
+      {
+         return -1;
+      }
+    else{
+        
+        if($c>=$n[$i])
+        {
+        $calnotes =floor($c/$n[$i]);
+        $rem=$c%$n[$i];
+        $c=$rem;
+        $total=$total+$calnotes;
+        echo " Notes of " . $n[$i] . "=" . $calnotes;
+		}
+		$i++;
+	    calnotes($c,$n);
+    }
 }
 ?>

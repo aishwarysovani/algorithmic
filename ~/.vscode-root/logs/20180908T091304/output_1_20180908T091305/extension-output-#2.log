@@ -1,0 +1,21 @@
+[Info  - 9:13:07 AM] 9 files total
+[Info  - 9:13:07 AM] Indexing project for definitions and static references
+Parsing file:///var/www/html/algorithmic/8bubblesort.php
+Parsing file:///var/www/html/algorithmic/1anagram.php
+Parsing file:///var/www/html/algorithmic/3palindrome.php
+Parsing file:///var/www/html/algorithmic/7insersort.php
+Parsing file:///var/www/html/algorithmic/4searchsort.php
+Parsing file:///var/www/html/algorithmic/9mergesort.php
+Parsing file:///var/www/html/algorithmic/2primeno.php
+Parsing file:///var/www/html/algorithmic/5question.php
+[Info  - 9:13:07 AM] Indexing project for dynamic references
+Parsing file:///var/www/html/algorithmic/8bubblesort.php
+Parsing file:///var/www/html/algorithmic/1anagram.php
+Parsing file:///var/www/html/algorithmic/3palindrome.php
+Parsing file:///var/www/html/algorithmic/7insersort.php
+Parsing file:///var/www/html/algorithmic/4searchsort.php
+Parsing file:///var/www/html/algorithmic/9mergesort.php
+Parsing file:///var/www/html/algorithmic/2primeno.php
+Parsing file:///var/www/html/algorithmic/5question.php
+[Info  - 9:13:07 AM] 0 Packages
+[Info  - 9:13:07 AM] All 9 PHP files parsed in 0 seconds. 140 MiB allocated.
