@@ -35,6 +35,22 @@ function checknum()
 }
 
 
+
+function checkpositive($num)
+{
+    if ($num<0)
+    {
+        echo"enter only positive numbers";
+        return checknum();
+    }
+    else
+    {
+       return $num;
+        
+    }
+}
+
+
 //function to check string is anagram or not
 function anagram($str1,$str2)
 {
@@ -105,22 +121,22 @@ function search()
 //function for binary sraech
 function binsearch($s,$a,$e)
 {
-    $start=0;$end=count($a)-1;
+    $start=0;$end=$s-1;
     while ($start <= $end) {
         $mid = floor(($start + $end) / 2);
-        if ($a[$mid] == $e) {
+        if($a[$mid] == $e) {
             return true;
-         if ($a[$mid] < $e) {
-            $end = $mid - 1;
-
-        } else {
+        }
+        if ($e < $a[$mid]) {
+            $end = $mid -1;
+        }
+        else {
             $start = $mid + 1;
         }
     }
-}
-return false;
-
-}
+    return false;
+    
+}   
 
 //function for string search
 function search1()
@@ -206,69 +222,68 @@ function bubbsort($s,$a)
 
 
 //function for merge sort
-function mergesort($a, $l, $m, $r)
+function merge($a,$l,$m,$r)
 {
-        $n1 = $m - $l + 1; 
-        $n2 =  $r - $m; 
+        $n1=$m-$l+1; 
+        $n2=$r-$m; 
         $L=array($n1); 
         $R=array($n2); 
-        for ($i = 0; $i < $n1; $i++) 
+        for($i=0;$i<$n1;$i++)
         {
-            $L[$i] = $a[$l + $i]; 
+           $L[$i]=$a[$l+$i]; 
         }
-        for ($j = 0; $j < $n2; $j++)
+        for($j=0;$j<$n2;$j++)
         { 
-            $R[$j] = $a[$m + 1 +$j]; 
+            $R[$j]=$a[$m+1+$j]; 
         }
         $i=0;$j=0;      
-        $k = $l; 
-        while ($i < $n1 && $j < $n2) 
+        $k=$l;
+        while($i<$n1 && $j<$n2) 
         { 
-            if ($L[$i] <= $R[$j]) 
+            if($L[$i]<=$R[$j]) 
             { 
-                $a[$k] = $L[$i]; 
-                $i++; 
-            } 
+                $a[$k]=$L[$i];
+                $i++;
+            }
             else
             { 
-                $a[$k] = $R[$j]; 
+                $a[$k]=$R[$j];
                 $j++; 
-            } 
-            $k++; 
+            }
+            $k++;
+        }
+        while($i<$n1) 
+        {  
+            $a[$k]=$L[$i]; 
+            $i++;
+            $k++;
         } 
-         while ($i < $n1) 
+        while($j<$n2) 
         { 
-            $a[$k] = $L[$i]; 
-            $i++; 
+            $a[$k]=$R[$j]; 
+            $j++;
             $k++; 
-        } 
-        while ($j < $n2) 
-        { 
-            $a[$k] = $R[$j]; 
-            $j++; 
-            $k++; 
-        } 
-        return $a;
+        }
+     return $a;
 }
 
 
-function mergeSort1($a,$l,$r) 
+function mergeSort($a,$l,$r) 
 { 
-    $m=$l+($r-$l)/2;
-    if ($l < $r) 
+    if ($l<$r) 
     { 
-        mergeSort1($a,$l,$m-1); 
-        mergeSort1($a,$m,$r); 
+       $m=$r-$l/2; 
+       mergeSort($a,$l,$m-1); 
+       mergeSort($a,$m,$r); 
   
-        $a=mergesort($a, $l, $m, $r); 
-    } 
+       $a=merge($a,$l,$m,$r); 
+    }
     return $a;
-} 
+}
 
-
-function calnotes($c,$n)
+//function for vending machine
+function calnotes($c,$n,$i,$total)
 {
-   $i=0;$total=0;
     if($c==0)
       {
          return -1;
@@ -281,10 +296,18 @@ function calnotes($c,$n)
         $rem=$c%$n[$i];
         $c=$rem;
         $total=$total+$calnotes;
-        echo " Notes of " . $n[$i] . "=" . $calnotes;
+        echo "\n Notes of " . $n[$i] . "=" . $calnotes;
 		}
 		$i++;
-	    calnotes($c,$n);
+	    calnotes($c,$n,$i,$total);
     }
+}
+
+
+//function for swap nibble of binary number
+function swapNibbles($n)
+{
+    return ( ($n & 0x0F) << 4 | 
+           ($n & 0xF0) >> 4 );
 }
 ?>

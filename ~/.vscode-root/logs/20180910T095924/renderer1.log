@@ -1,0 +1,6 @@
+[2018-09-10 09:59:26.176] [renderer1] [info] no standard startup: panel is active
+[2018-09-10 09:59:26.525] [renderer1] [info] No grammar found for scope text.html.javadoc
+[2018-09-10 11:11:22.404] [renderer1] [error] Invalid start index: 5: Error: Invalid start index: 5
+    at e.splice (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:836:164)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:2092:932
+    at <anonymous>

@@ -1,0 +1,18 @@
+[2018-09-10 09:09:54.864] [exthost1] [info] extension host started
+[2018-09-10 09:09:54.882] [exthost1] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-09-10 09:09:54.882] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-auto-launch/out/extension
+[2018-09-10 09:09:55.031] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-09-10 09:09:55.031] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/out/extension
+[2018-09-10 09:09:55.476] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-09-10 09:09:55.476] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/out/main
+[2018-09-10 09:09:56.255] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-09-10 09:09:56.255] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/out/extension
+[2018-09-10 09:09:56.291] [exthost1] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-09-10 09:09:56.291] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/search-rg/out/extension
+[2018-09-10 09:09:56.343] [exthost1] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"activationEvent":"onLanguage:php"}
+[2018-09-10 09:09:56.343] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/php-language-features/out/phpMain
+[2018-09-10 09:09:56.418] [exthost1] [info] ExtensionService#_doActivateExtension felixfbecker.php-intellisense {"startup":false,"activationEvent":"onLanguage:php"}
+[2018-09-10 09:09:56.418] [exthost1] [info] ExtensionService#loadCommonJSModule /home/bridgeit/.vscode/extensions/felixfbecker.php-intellisense-2.3.5/out/extension
+[2018-09-10 09:09:56.542] [exthost1] [info] ExtensionService#_doActivateExtension kokororin.vscode-phpfmt {"startup":false,"activationEvent":"onLanguage:php"}
+[2018-09-10 09:09:56.542] [exthost1] [info] ExtensionService#loadCommonJSModule /home/bridgeit/.vscode/extensions/kokororin.vscode-phpfmt-1.0.30/out/src/extension
+[2018-09-10 09:09:57.196] [exthost1] [info] eager extensions activated
