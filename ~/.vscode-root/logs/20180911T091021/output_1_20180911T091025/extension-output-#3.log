@@ -1,0 +1,29 @@
+[Info  - 9:10:32 AM] 13 files total
+[Info  - 9:10:32 AM] Indexing project for definitions and static references
+Parsing file:///var/www/html/algorithmic/swapbinary.php
+Parsing file:///var/www/html/algorithmic/primeno.php
+Parsing file:///var/www/html/algorithmic/question.php
+Parsing file:///var/www/html/algorithmic/dayweek.php
+Parsing file:///var/www/html/algorithmic/bubblesort.php
+Parsing file:///var/www/html/algorithmic/anagram.php
+Parsing file:///var/www/html/algorithmic/merge.php
+Parsing file:///var/www/html/algorithmic/tobinary.php
+Parsing file:///var/www/html/algorithmic/searchsort.php
+Parsing file:///var/www/html/algorithmic/palindrome.php
+Parsing file:///var/www/html/algorithmic/insersort.php
+Parsing file:///var/www/html/algorithmic/vending.php
+[Info  - 9:10:32 AM] Indexing project for dynamic references
+Parsing file:///var/www/html/algorithmic/swapbinary.php
+Parsing file:///var/www/html/algorithmic/primeno.php
+Parsing file:///var/www/html/algorithmic/question.php
+Parsing file:///var/www/html/algorithmic/dayweek.php
+Parsing file:///var/www/html/algorithmic/bubblesort.php
+Parsing file:///var/www/html/algorithmic/anagram.php
+Parsing file:///var/www/html/algorithmic/merge.php
+Parsing file:///var/www/html/algorithmic/tobinary.php
+Parsing file:///var/www/html/algorithmic/searchsort.php
+Parsing file:///var/www/html/algorithmic/palindrome.php
+Parsing file:///var/www/html/algorithmic/insersort.php
+Parsing file:///var/www/html/algorithmic/vending.php
+[Info  - 9:10:32 AM] 0 Packages
+[Info  - 9:10:32 AM] All 13 PHP files parsed in 0 seconds. 140 MiB allocated.

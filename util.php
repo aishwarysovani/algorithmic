@@ -222,12 +222,12 @@ function bubbsort($s,$a)
 
 
 //function for merge sort
-function merge($a,$l,$m,$r)
+/*function merge($a,$l,$m,$r)
 {
         $n1=$m-$l+1; 
         $n2=$r-$m; 
-        $L=array($n1); 
-        $R=array($n2); 
+        $L=array_fill(0,$n1,"");
+        $R=array_fill(0,$n2,"");
         for($i=0;$i<$n1;$i++)
         {
            $L[$i]=$a[$l+$i]; 
@@ -269,17 +269,17 @@ function merge($a,$l,$m,$r)
 
 
 function mergeSort($a,$l,$r) 
-{ 
-    if ($l<$r) 
+{  print_r($a);
+    if ($l<$r)
     { 
        $m=$r-$l/2; 
        mergeSort($a,$l,$m-1); 
        mergeSort($a,$m,$r); 
   
-       $a=merge($a,$l,$m,$r); 
+       merge($a,$l,$m,$r); 
     }
-    return $a;
-}
+       return $a;
+}*/
 
 //function for vending machine
 function calnotes($c,$n,$i,$total)
